@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Autocomplete - Default functionality</title>
+  //
+  <!-- jquery lbrary -->
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <!-- js and css libraries for auto complete -->
+  <link rel="stylesheet" href="../../js/EasyAutocomplete/easy-autocomplete.min.css">
+  <script src="../../js/EasyAutocomplete/jquery.easy-autocomplete.min.js"></script> 
+  
+</head>
+<body>
+  
+
+<input id="name_and_identity" /> <h1>الاسماء وارقام الهويات</h1>  <br>
+<input id="procecutions" /><h1>ارقام القضايا</h1> <br>
+
+<script>
+var options = {
+			url: "autocomplete_name_identity.php",
+		    getValue: "name",
+		    list: {
+		        match: {
+		            enabled: true
+		        }
+		    },
+		    theme: "plate-dark"
+		};
+		$("#name_and_identity").easyAutocomplete(options);
+
+		//اوتو كومبليت لارقام القضايا 
+		var procecution_options = {
+			url: "autocomplete_procecution_number.php",
+		    getValue: "procecution_number",
+		    list: {
+		        match: {
+		            enabled: true
+		        }
+		    },
+		    theme: "plate-dark"
+		};
+		$("#procecutions").easyAutocomplete(procecution_options);
+ </script>
+ 
+</body>
+</html>
