@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+body{
+    position:relative;
+    background-color:#eee
+}
+header .navbar-header{
+    float:right;
+}.dropdown-menu > li > a{
+    text-align:center;
+    background-color:#333;
+    color:#fff;
+}.dropdown-menu{
+    background-color:#333;
+}
+@media only screen and (max-width:767px){
+    .container-fluid{
+    background-color:#333;
+    color:#fff;
+}.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    margin-top:50px;
+    text-align: center;
+ }
+}
+#editor {
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+      white-space: pre;
+  word-wrap: normal;
+}.navbar{
+    border-radius: 0;
+}
+/**End style header nav**/

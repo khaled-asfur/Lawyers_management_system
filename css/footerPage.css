@@ -1,0 +1,22 @@
+.page-footer{
+    margin-top:140px;
+    clear: both;
+    height:70px;
+    margin:auto;
+    background-color:#333;
+    width:100%;
+    margin:0px;
+    height:60px;
+    color:#fff;
+    line-height: 50px;
+    text-align: center;
+    padding-top:5px;
+    position: absolute; 
+    left: 0 ; right: 0; bottom: 0
+}.page-footer span{
+    font-weight: bold;
+    font-size: 15px
+}
+.footer.page-footer .container-fluid{
+    width:auto
+}

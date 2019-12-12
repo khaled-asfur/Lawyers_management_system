@@ -1,0 +1,100 @@
+.img-cover{
+    width:100%;
+    height: 100%
+}.img-cover img.image{
+    width:100%;
+   min-height:700px;
+    position:absolute;
+    opacity: .8;
+    z-index: -1
+}.logIn-section{
+    margin:110px auto;
+    width:70%;
+    box-shadow: 0 0 7px 5px rgba(0,0,0,.4);
+    box-shadow: 0 15px 40px rgba(0,0,0,.5);
+    min-height: 500px;
+    margin-bottom:0px
+}
+.logIn-section .leftSide{
+    width:50%;
+    min-height:500px;
+    background-image: url("../image/3.jpg");
+    background-position: center;
+    background-size: cover;
+    border-left:1px solid #ddd;
+    float:left
+}
+.logIn-section .rigthSide{
+    width:50%;
+    min-height: 500px;
+    background-color: #fff;
+    float:left;
+    text-align:center;
+    padding:30px 20px
+}.logIn-section .rigthSide .h1{
+    color:#262626;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom:40px
+}.logIn-section .rigthSide  input{
+    width:100%;
+    margin-bottom:40px;
+    padding:15px;
+    font-family:montserrat;
+    font-size:13px;
+    border:none 0;
+    border-bottom:2px solid #ddd
+}.logIn-section .rigthSide  input::placeholder{
+    transition: all .4s
+}.logIn-section .rigthSide  input:focus::placeholder{
+    color:transparent
+}.logIn-section .rigthSide .login_btn{
+    width:160px;
+    height:50px;
+    text-align:center;
+    margin-top:20px;
+    font-weight: bold;
+    transition: all .8s;
+    text-transform: capitalize
+}.logIn-section .rigthSide button:hover,
+.logIn-section .rigthSide button:focus{
+    box-shadow: 0 0 0 2px white,0 0 0 3px #27AE60 
+}.logIn-section .rigthSide span{
+    display: block;
+    margin-top:20px;
+    font-size:13px
+}.logIn-section .rigthSide span a{
+    color:#ddd;
+    transition:all 1s
+}.logIn-section .rigthSide span a:link,
+.logIn-section .rigthSide span a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color:#262626
+}.rigthSide span{
+    color:tomato;
+    font-size:13px;
+    margin-bottom:10px
+}
+.err_div{
+    top:-16px !important;
+    width:15px;
+    height:30px;
+
+}
+@media only screen and (max-width:950px){
+     .logIn-section{
+        width:90% !important;
+    }
+}
+
+@media only screen and (max-width:950px){
+    .logIn-section{
+        width:90% !important;
+    }
+    .logIn-section .rigthSide{
+        width:100% !important;
+    }.logIn-section .leftSide{
+        display: none !important;
+    }
+}

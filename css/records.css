@@ -1,0 +1,284 @@
+body{
+    background-color:#eee;
+        position: relative;
+}
+.image-header{
+    margin-top:5px;
+}
+/*Header style*/
+header .navbar-inverse{
+    border:0;
+    border-radius: 0;
+    height:50px;
+    text-transform: capitalize;
+    color:#fff;
+    width:100%;
+    position:relative;
+}header{
+    width:100%;
+    height: 50px;
+    margin-bottom:80px
+}
+.navbar-inverse{
+    width:100%;
+   position:fixed;
+    z-index:5
+}.navbar-header{
+    float:right
+}
+/**End header Style**/
+/***Start Search***/
+.form-search .text-search{
+    border:none 0;
+    padding:11px;
+    width:300px;
+    
+}
+.form-search{
+    margin-bottom:25px
+}
+.form-search .btn-search{
+    border:0;
+    padding:11px;
+    position:absolute;
+    background-color:#138496;
+    color:#fff
+}.dropdown_ser{
+    background-color:#138496;
+    color:#fff;
+    width:34px
+}
+.dropdown_ser .btn{
+    background-color:#138496
+}
+.dropdown_ser {
+    display: inline-block;
+    margin-right: 49px;
+    height: 42px;
+    position: absolute
+}@media 
+    only screen and (max-width: 508px){
+        .form-search .text-search{
+            width:200px
+        } .form-search{
+            margin-left:20px
+        }
+}@media 
+    only screen and (max-width: 347px){
+        .form-search{
+            margin-left:60px
+        }
+}
+/***End Search***/
+
+.table-section{
+    margin-bottom:50px;
+}
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  .dropdown_ser button{
+        margin-left:182px
+    }.dropdown-menu{
+        margin-left:150px;
+        font-size:12px
+    }
+    .text-search{
+        width:200px
+    }	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px
+	}
+	
+	tr { border: 1px solid #ccc }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-right: 50% 
+	}
+    tfoot{
+        width:100%;
+        height:50px
+    }
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		right: 6px;
+		width: 45%; 
+		padding-left: 45px;
+		white-space: nowrap
+    }
+    td button{
+        margin-bottom:15px
+    }
+    .table-section button{
+        margin-bottom:5px
+    }
+    td{text-align:center}/*
+	Label the dataتاريخ التذكير 	تاريخ الجلسة
+	*/
+    tbody>tr>td:nth-of-type(1):before{content:"الاسم"}
+	tbody>tr>td:nth-of-type(2):before { content: "رقم القضية" }
+	tbody>tr>td:nth-of-type(3):before{ content: "رقم الجلسة" }
+	tbody>tr>td:nth-of-type(4):before { content: "تاريخ الجلسة" }
+	tbody>tr>td:nth-of-type(5):before{ content: "تاريخ التذكير" }
+    tfoot td:before{content:none;}
+    tfoot tr td{border-bottom:1px solid #fff !important;}
+    tfoot tr td:before{content:none !important; color:#fff !important}
+    tfoot{
+        display:block !important;
+        width:100% !important
+    }
+}
+/*End search button style*/
+
+.table-section{margin-top:30px}
+.table-section table{
+    width:100%
+}
+.table-section table th{
+    background-color:#333;
+    color:#fff;
+    font-weight: bold;
+    text-align: center
+}.table-section td{
+}
+.table-section .actions{
+    text-align:center;
+}.table-section .actions button{
+    margin-left:7px
+}.table-bordered > tfoot > tr > td{
+    text-align: center
+}.table-section .actions button{
+    margin-bottom:15px;
+    width:92px
+}
+input{
+
+}td{
+    padding:0px;
+}
+td input{
+    padding:5px;
+    margin:0;
+    width:180px;
+    height:60px;
+    border:0 none;
+    background-color:#eee;
+}
+td input.specialWidth{
+    width:40px;
+    text-align: center
+}
+footer{
+   /* padding:20px 20px;
+    background-color:#23222d;
+    color:#fff;*/
+}
+
+
+/***registier **/
+ .overlay .container{
+    text-align:center;
+    padding-top:100px;
+     padding-bottom:100px;
+    background-color:#eee;
+     position: relative;
+}.info .sub-title{
+    color:#c5c5c5;
+    text-transform: capitalize;
+    padding-left:15px;
+    text-align:right;
+    width:35%;
+    padding-right: 15px;
+    float:right
+}.info .info-value{
+    width:50%;
+    float:right;
+    text-align: left;
+    padding-left: 15px;
+    background-color:#fff;
+    border:0 none;
+    border:1px solid #c5c5c5;
+    padding:15px;
+    text-align: right
+}.info{
+    display:block;
+    margin-bottom:20px;
+    height:40px;
+}.btn-info-section button{
+    width:100px;
+    margin-top:25px;
+    background-color:#333;
+    color:#fff;
+    transition: all .5s;
+}.btn-info-section button:hover{
+    background-color:#333;
+    color:#fff
+}.overlay{
+    display:none;
+    padding-top:150px;
+    width:100%;
+    z-index:1;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    background-color:rgba(0,0,0,.5);
+}.close-icons{
+    position:absolute;
+    right:5;
+    top:10px;
+    cursor: pointer;
+    font-size: 25px
+}.confirm-delete p
+,.confirm-edit p{
+    font-size:17px;
+    margin-bottom:15px;
+}.confirm-delete button,
+.confirm-edit button{
+    width:50px;
+}.confirm-delete container,
+.confirm-edit container{
+    margin-top:300px;
+}.dropdown-menu{
+    background-color:#333;
+    color:#fff;
+}.dropdown-menu li{
+     background-color:#333;
+    color:#fff;
+        z-index:2;
+
+}.dropdown-menu > li > a{
+     background-color:#333;
+    color:#fff;
+    text-align: center
+}.dropdown-menu .divider{
+    background-color:#111;
+    margin:0;
+}
+@media only screen and (max-width:767px){
+    .container-fluid{
+    background-color:#333;
+    color:#fff;
+}.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    margin-top:50px;
+    text-align: center;
+ }
+}
+
+/***end registier form**/

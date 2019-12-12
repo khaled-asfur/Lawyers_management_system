@@ -1,0 +1,14 @@
+.sec-search{padding-top:150px}
+.form-search{
+    margin-bottom:25px
+}
+.form-search input{
+    border:none 0;
+    padding:15px;
+    font-size:12px;
+    text-align:right
+}.form-search button{
+    border-radius:0;
+    height: 47px;
+    position:absolute
+}

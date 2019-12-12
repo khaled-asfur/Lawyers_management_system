@@ -1,0 +1,180 @@
+/**Start section table***/
+.table-section{
+    margin-top:30px
+}table input[type=email]{
+    width:200px;
+}
+    .image-header{
+    margin-top:5px;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    table, thead, tbody, th, td, tr { display: block }
+    thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px
+	}tr { border: 1px solid #ccc }
+	td {
+        border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-right: 50% 
+	}tfoot{
+        width:100%;
+        height:50px
+    }td:before { 
+		position: absolute;
+		top: 6px;
+		right: 6px;
+		width: 30%; 
+		padding-left: 70px;
+		white-space: nowrap
+    }td input{
+        padding-right: 20px
+    }
+    td button{
+        margin-bottom:15px
+    }.table-section button{
+        margin-bottom:5px
+    }td{text-align:center}
+    tbody>tr>td:nth-of-type(1):before{content:"الاسم"}
+    tbody>tr>td:nth-of-type(2):before{ content: "رقم الجوال" }
+	tbody>tr>td:nth-of-type(3):before { content: "الايميل" }
+    tfoot td:before{content:none;}
+    tfoot tr td{border-bottom:1px solid #fff !important}
+    tfoot tr td:before{content:none !important; color:#fff !important}
+    tfoot{
+        display:block !important;
+        width:100% !important
+    }
+    .checkmark {
+  left: 10% !important;
+}
+}
+/**End styling table section**/
+
+
+ /* Customize the label (the container) */
+.cont{
+  display: block;
+  position: relative;
+  padding-left: 0px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.cont input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  height: 25px;
+  width: 25px;
+  background-color:#eee;
+}
+
+/* On mouse-over, add a grey background color */
+.cont:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.cont input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.cont input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.cont .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.btn-save {
+    margin-top:25px;
+    margin-bottom:30px
+}
+.overlay{
+    background-color:rgba(0,0,0,.999);
+    min-height: 1000px;
+    position:absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    display: none;
+}
+.overlay .container{
+    margin-top:10%;
+    position:relative;
+    padding-top:70px;
+    background-color:#fff;
+}
+
+
+
+/***footer***/
+footer{
+  /*  margin-top:150px;
+    padding:20px 20px;
+    background-color:#23222d;
+    color:#fff;
+    text-align:center*/
+}
+
+/**End footer***/
+.close-btn{
+    position:absolute;
+    top:10px;
+    right: 10px;
+    color:#188dad;
+    font-size:25px;
+    cursor:pointer;
+}.super-title{
+    font-size:30px;
+    font-weight: bold;
+    color:#188dad;
+    margin-bottom:43px;
+    margin-top:55px
+}.addLawyer .container{
+    padding-top:35px;
+    position: relative;
+    background-color:#fff;
+}.addLawyer button{
+    width:130px;
+    padding:11px;
+    padding-right: 15px;
+    padding-bottom:18px;
+    margin-bottom:35px;
+}
